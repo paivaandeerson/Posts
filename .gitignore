@@ -3,3 +3,5 @@
 ################################################################################
 
 /InstancePool/ConsoleApp/ConsoleApp1/bin
+/InstancePool/ConsoleApp/.vs/ConsoleApp
+/InstancePool/ConsoleApp/ConsoleApp1/obj/Release/net5.0

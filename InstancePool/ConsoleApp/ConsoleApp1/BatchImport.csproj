@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\anderson.oliveira\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.49\build\..\lib\native\x86\KernelTraceControl.dll" />
+    <None Remove="C:\Users\anderson.oliveira\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.49\build\..\lib\native\x86\KernelTraceControl.Win61.dll" />
+    <None Remove="C:\Users\anderson.oliveira\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.49\build\..\lib\native\x86\msdia140.dll" />
+    <None Remove="couses.csv" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <Page Include="Program.cs" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="couses.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="live-courses - 2.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="live-courses - 3.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="live-courses.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
